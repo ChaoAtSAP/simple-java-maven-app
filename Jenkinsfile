@@ -18,7 +18,7 @@ pipeline {
          }
         stage('Deliver') {
             steps {
-               bat 'C:\Program Files (x86)\Jenkins\workspace\simple-java-maven-app\jenkins\scripts'
+               bat 'C:/Program Files (x86)/Jenkins/workspace/simple-java-maven-app/jenkins/scripts/deliver.sh'
             }
         }
     }
