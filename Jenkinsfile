@@ -18,7 +18,8 @@ pipeline {
          }
         stage('Deliver') {
             steps {
-               bat 'deliver.sh'
+                def localpath='./jenkins/scripts/'
+                bat "${localpath}deliver.sh"
             }
         }
     }
