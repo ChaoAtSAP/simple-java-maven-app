@@ -1,6 +1,6 @@
 pipeline {
     agent any
-    def localpath='./jenkins/scripts/'
+   
     stages {
         stage('Build') { 
             steps {
@@ -20,7 +20,7 @@ pipeline {
         stage('Deliver') {
             steps {
                 
-                bat "${localpath}deliver.sh"
+                bat "./jenkins/scripts/deliver.sh"
             }
         }
     }
